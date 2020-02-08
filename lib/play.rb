@@ -37,12 +37,12 @@ end
 
 def full_board?(board)
   index = 0
+  full = true
   while index < 9
-    if board[index] == " "
-      return false
-    end
-    return true
+    full = full && board[index] != " "
+    index += 1
   end
+  return full
 end
 
 # Define your play method below
