@@ -47,7 +47,7 @@ end
 
 # Define your play method below
 def play(board)
-  while !full_board?(board)
+  while !(full_board?(board)
     turn(board)
   end
 end
